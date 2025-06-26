@@ -14,11 +14,14 @@ export interface ChatMessage {
 }
 
 const algorithmKeywords = {
-  palindrome: ['palindrome', 'pal'],
-  prime: ['prime', 'pr'],
-  evenOdd: ['even', 'odd', 'evenodd'],
-  fibonacci: ['fibonacci', 'fib'],
-  armstrong: ['armstrong', 'arm']
+  palindrome: ['palindrome', 'pal','dromic', 'drome','pali','pali no.', 'pali no', 'palindrome no.', 'palindrome no'],
+  prime: ['prime', 'pr', 'prime no', 'prime number', 'prime no.','not prime', 'not a prime', 'not prime no.', 'not prime no'],
+  evenOdd: ['even', 'odd', 'evenodd', 'even or odd', 'even/odd', 'even no', 'odd no', 'even number', 'odd number', 'even no.', 'odd no.', 'even/odd no.', 'even/odd no', 'even/odd no.','ev','odd', 'even no.', 'odd no', 'even number', 'odd number'],
+  fibonacci: ['fibonacci', 'fib', 'fibonacci no', 'fibonacci number', 'fibonacci no.', 'fiboo','fibo no.','fibo no'],
+  armstrong: ['armstrong', 'arm', 'armstrong no', 'armstrong number', 'armstrong no.', 'arm no', 'arm no.'],
+  factorial: ['factorial', 'fac','fact', 'factorial no', 'factorial number', 'factorial no.', 'fact no', 'fact no.'],
+  reverseString: ['reverse string', 'reverse', 'rev str', 'revstr', 'reversing string', 'reversing', 'rev str no', 'revstr no', 'reversing string no', 'reversing string no.'],
+  sortArray: ['sort array', 'sort', 'sorting array', 'sort arr', 'sort array no', 'sort arr no', 'sorting array no', 'sorting array no.'],
 };
 
 export const checkForAlgorithmMatch = (text: string): keyof typeof algorithmTemplates | null => {
